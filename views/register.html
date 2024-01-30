@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form id="registerForm" class="custom-register-form">
+        <label for="nombreApellido" class="custom-label">Nombre y Apellido:</label>
+        <input type="text" id="nombreApellido" name="nombreApellido" class="custom-input" required>
+    
+        <label for="nombreUsuario" class="custom-label">Nombre de usuari@:</label>
+        <input type="text" id="nombreUsuario" name="nombreUsuario" class="custom-input" required>
+    
+        <label for="email" class="custom-label">Email:</label>
+        <input type="email" id="email" name="email" class="custom-input" required>
+    
+        <label for="fechaNacimiento" class="custom-label">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" class="custom-input" required>
+    
+        <label for="domicilio" class="custom-label">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio" class="custom-input" required>
+    
+        <label for="perfil" class="custom-label">Perfil del usuario:</label>
+        <select id="perfil" name="perfil" class="custom-select" required>
+            <option value="comprar">Comprar</option>
+            <option value="vender">Vender</option>
+        </select>
+    
+        <label class="custom-label">Categorías de interés:</label>
+        <div class="custom-checkbox-group">
+            <input type="checkbox" id="electro" name="categorias" value="electro" class="custom-checkbox">
+            <label for="electro" class="custom-checkbox-label">Electro</label>
+    
+            <input type="checkbox" id="moda" name="categorias" value="moda" class="custom-checkbox">
+            <label for="moda" class="custom-checkbox-label">Moda</label>
+    
+            <input type="checkbox" id="hogar" name="categorias" value="hogar" class="custom-checkbox">
+            <label for="hogar" class="custom-checkbox-label">Hogar</label>
+    
+            <input type="checkbox" id="jugueteria" name="categorias" value="jugueteria" class="custom-checkbox">
+            <label for="jugueteria" class="custom-checkbox-label">Juguetería</label>
+    
+            <input type="checkbox" id="vidaSana" name="categorias" value="vidaSana" class="custom-checkbox">
+            <label for="vidaSana" class="custom-checkbox-label">Vida Sana</label>
+        </div>
+    
+        <label for="fotoUsuario" class="custom-label">Foto de usuario:</label>
+        <input type="file" id="fotoUsuario" name="fotoUsuario" class="custom-file-input" accept="image/*">
+    
+        <label for="password" class="custom-label">Contraseña:</label>
+        <input type="password" id="password" name="password" class="custom-input" required>
+    
+        <label for="confirmarPassword" class="custom-label">Confirmar contraseña:</label>
+        <input type="password" id="confirmarPassword" name="confirmarPassword" class="custom-input" required>
+    
+        <button type="submit" class="custom-button">Enviar</button>
+        <button type="reset" class="custom-reset-button">Borrar datos</button>
+    </form>
+</body>
+</html>
