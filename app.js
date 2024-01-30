@@ -9,9 +9,11 @@ app.get("/",(req, res)=> {
    const pathHome = path.join(__dirname, "views/home.html")
     res.sendFile(pathHome);
 })
+/*res.sendFile(`${__dirname}/views/home.html`)*/
 
 app.get('/login', (req, res) => {
-    let rutaHtml = path.join(__dirname, './views/login.html');
+    /*let rutaHtml = path.join(__dirname, './views/login.html');*/
+    let rutaHtml = `${__dirname}/views/login.html`
     res.sendFile(rutaHtml, (err) => {
         if (err) {
             console.error('Error al enviar el archivo:', err);
@@ -22,7 +24,8 @@ app.get('/login', (req, res) => {
     });
 });
 app.get('/register', (req, res) => {
-    let rutaHtml = path.join(__dirname, './views/register.html');
+    /*let rutaHtml = path.join(__dirname, './views/register.html');*/
+     let rutaHtml = `${__dirname}/views/register.html`
     res.sendFile(rutaHtml, (err) => {
         if (err) {
             console.error('Error al enviar el archivo:', err);
